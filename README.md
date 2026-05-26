@@ -20,16 +20,6 @@
   </p>
 </div>
 
-> [!CAUTION]
-> **不要提交真实 `.env` 文件、API Key、用户上传图片、数据库文件或生成产物。**
->
-> 本仓库只提交 `.env.example`。本地开发请复制示例文件后自行填写密钥：
->
-> ```bash
-> cp frontend/.env.example frontend/.env
-> cp backend/.env.example backend/.env
-> ```
-
 ---
 
 ## ✨ 项目简介
@@ -110,6 +100,8 @@ npm --prefix backend install
 
 ### 3. 配置环境变量
 
+项目提供了环境变量示例文件，复制后按你的模型服务配置填写：
+
 ```bash
 cp frontend/.env.example frontend/.env
 cp backend/.env.example backend/.env
@@ -176,8 +168,8 @@ npm run dev:frontend
 | `STUDIO_GENESIS_IMAGE_BASE_URL` | `https://api.example.com/v1` | 后端图片模型地址 |
 | `STUDIO_GENESIS_IMAGE_ENDPOINT` | `/images/generations` | 后端图片生成接口路径 |
 
-> [!IMPORTANT]
-> `.env.example` 只用于说明变量名。真实 API Key 应放在本地 `.env` 或线上 Secret Manager 中。
+> [!NOTE]
+> 生产部署时建议通过平台 Secret Manager 配置 API Key。
 
 ---
 
@@ -265,10 +257,6 @@ npm --prefix frontend run start
 ```bash
 BACKEND_URL=http://localhost:3001
 ```
-
-### 为什么仓库里没有真实 `.env`？
-
-这是刻意设计。开源仓库不能提交真实密钥。请复制 `.env.example` 到 `.env` 后在本地填写。
 
 ### 上传图片和生成文件在哪里？
 
