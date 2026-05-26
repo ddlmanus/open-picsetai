@@ -18,6 +18,9 @@
     <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5-blue.svg" />
     <img alt="Status" src="https://img.shields.io/badge/Open%20Source-Ready-success.svg" />
   </p>
+  <p>
+    <img alt="Open PicsetAI Screenshot" src="./image.png" />
+  </p>
 </div>
 
 ---
